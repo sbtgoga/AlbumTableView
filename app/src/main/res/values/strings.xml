@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AlbumTableView</string>
+    <string name="error_generic">There was a problem</string>
 </resources>

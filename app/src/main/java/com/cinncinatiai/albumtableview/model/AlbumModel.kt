@@ -1,4 +1,4 @@
-package com.cinncinatiai.albumtableview.Model
+package com.cinncinatiai.albumtableview.model
 
 data class AlbumModel(
     val albumId: Int,
