@@ -1,9 +1,11 @@
 package utils
+
 import android.view.View
 
-fun View.gone(){
+fun View.gone() {
     this.visibility = View.GONE
 }
-fun View.show(){
+
+fun View.show() {
     this.visibility = View.VISIBLE
 }

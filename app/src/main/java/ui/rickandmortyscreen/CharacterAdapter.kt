@@ -1,29 +1,29 @@
-package ui.albumsscreen
+package ui.rickandmortyscreen
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.cinncinatiai.albumtableview.databinding.CardViewDesignBinding
-import com.cinncinatiai.albumtableview.model.AlbumModel
+import com.cinncinatiai.albumtableview.model.CharacterModel
 
-class AlbumAdapter : RecyclerView.Adapter<AlbumViewHolder>() {
-    private val items = mutableListOf<AlbumModel>()
+class CharacterAdapter : RecyclerView.Adapter<CharacterViewHolder>() {
+    private val items = mutableListOf<CharacterModel>()
 
-    fun setAlbums(albums: List<AlbumModel>) {
+    fun setCharacter(characters: List<CharacterModel>) {
         items.clear()
-        items.addAll(albums)
+        items.addAll(characters)
         notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): AlbumViewHolder {
+    ): CharacterViewHolder {
         val view = CardViewDesignBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return AlbumViewHolder(view)
+        return CharacterViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: AlbumViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: CharacterViewHolder, position: Int) {
         holder.bindItem(items[position])
     }
 
