@@ -15,7 +15,7 @@
         android:theme="@style/Theme.AlbumTableView"
         tools:targetApi="31">
         <activity
-            android:name="ui.albumsscreen.AlbumsActivity"
+            android:name="ui.rickandmortyscreen.RickAndMortyMainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
